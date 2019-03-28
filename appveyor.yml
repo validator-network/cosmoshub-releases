@@ -1,0 +1,18 @@
+image: ubuntu
+environment:
+  VERSION: v0.33.0
+build_script:
+- ./crossbuild.sh
+test: off
+artifacts:
+- path: cosmos-sdk\build\**\*
+  name: binaries
+deploy:
+- provider: GitHub
+  artifact: binaries
+  force_update: true
+  auth_token:
+    secure: SERXxwAZ1vkVUWOnTQfcgT/0hedjaREDAqYSlHAsdVt+rF/b6DHYzYJmOiZw0eP3
+  on:
+    branch: master
+    APPVEYOR_REPO_TAG: true
