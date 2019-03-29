@@ -1,7 +1,8 @@
 #!/bin/bash -ex
 
-git clone https://github.com/cosmos/cosmos-sdk -b ${VERSION}
+git clone https://github.com/cosmos/cosmos-sdk
 cd cosmos-sdk
+git checkout -qf ${VERSION}
 
 # Append crossbuild-cli target to Makefile
 cat << "EOF" >> Makefile
