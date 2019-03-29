@@ -6,7 +6,11 @@ This repository contains _unofficial_ gaiacli binaries for Windows, Linux and Ma
 
 They are built using the official [cosmos-sdk](https://github.com/cosmos/cosmos-sdk) source code and provided here as a convenience for users unable to compile it.
 
-Please note that the binaries are provided without any warranties. Use at your own risk.
+Please note that the binaries are provided without any warranties and have not been thoroughly tested. Use at your own risk.
+
+Known issues:
+* gaiacli-win defaults to store user settings in the root of the drive. Provide a proper `--home` directory.
+* No Ledger support right now.
 
 ## gaiacli v0.33.0-76-g5bb6090e
 Binaries:  https://github.com/validator-network/cosmoshub-releases/releases/tag/v0.33.0-76-g5bb6090e  
