@@ -16,5 +16,4 @@ echo "*** Start of modified Makefile ***"
 cat Makefile
 echo "*** End of modified Makefile ***"
 
-which go
 make crossbuild-cli

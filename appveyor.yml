@@ -1,4 +1,5 @@
 image: ubuntu
+stack: go 1.11.2
 environment:
   VERSION: develop
 build_script:
