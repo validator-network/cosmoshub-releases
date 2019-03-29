@@ -15,5 +15,4 @@ deploy:
   auth_token:
     secure: SERXxwAZ1vkVUWOnTQfcgT/0hedjaREDAqYSlHAsdVt+rF/b6DHYzYJmOiZw0eP3
   on:
-    branch: master
     APPVEYOR_REPO_TAG: true
