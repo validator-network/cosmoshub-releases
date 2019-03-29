@@ -1,6 +1,6 @@
 image: ubuntu
 environment:
-  VERSION: v0.33.0
+  VERSION: develop
 build_script:
 - ./crossbuild.sh
 test: off
