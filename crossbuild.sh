@@ -7,9 +7,9 @@ cd cosmos-sdk
 cat << "EOF" >> Makefile
 
 crossbuild-cli: go.sum
-	env GOOS=windows GOARCH=amd64 go build -mod=readonly $(BUILD_FLAGS) -o build/windows/amd64/gaiacli.exe ./cmd/gaia/cmd/gaiacli
-	env GOOS=linux GOARCH=amd64 go build -mod=readonly $(BUILD_FLAGS) -o build/linux/amd64/gaiacli ./cmd/gaia/cmd/gaiacli
-	env GOOS=darwin GOARCH=amd64 go build -mod=readonly $(BUILD_FLAGS) -o build/darwin/amd64/gaiacli ./cmd/gaia/cmd/gaiacli
+	env GOOS=windows GOARCH=amd64 go build -mod=readonly $(BUILD_FLAGS) -o build/gaiacli-win.exe ./cmd/gaia/cmd/gaiacli
+	env GOOS=linux GOARCH=amd64 go build -mod=readonly $(BUILD_FLAGS) -o build/gaiacli-linux ./cmd/gaia/cmd/gaiacli
+	env GOOS=darwin GOARCH=amd64 go build -mod=readonly $(BUILD_FLAGS) -o build/gaiacli-darwin ./cmd/gaia/cmd/gaiacli
 EOF
 
 echo "*** Start of modified Makefile ***"
