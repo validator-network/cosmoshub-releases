@@ -1,7 +1,7 @@
 image: ubuntu
 stack: go 1.11.2
 environment:
-  VERSION: 5bb6090e38625e7341b13c550892ca828bbffa5e
+  VERSION: v0.34.0
 build_script:
 - ./crossbuild.sh
 test: off
