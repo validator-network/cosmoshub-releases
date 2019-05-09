@@ -12,6 +12,11 @@ Known issues:
 * gaiacli-win defaults to store user settings in the root of the drive. Provide a proper `--home` directory.
 * No Ledger support right now.
 
+## gaiacli v0.34.4
+Binaries:  https://github.com/validator-network/cosmoshub-releases/releases/tag/v0.34.4  
+Source:    https://github.com/cosmos/cosmos-sdk/tree/v0.34.4  
+Build log: https://ci.appveyor.com/project/validator-network/cosmoshub-releases/builds/24417758  
+
 ## gaiacli v0.34.0
 Binaries:  https://github.com/validator-network/cosmoshub-releases/releases/tag/v0.34.0  
 Source:    https://github.com/cosmos/cosmos-sdk/tree/v0.34.0  
