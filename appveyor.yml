@@ -1,5 +1,5 @@
 image: ubuntu
-stack: go 1.12.0
+stack: go 1.12.1
 environment:
   VERSION: v0.34.5
 build_script:
